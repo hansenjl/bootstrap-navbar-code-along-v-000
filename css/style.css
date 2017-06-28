@@ -6,7 +6,41 @@ img, video, audio, iframe, table, form {
 }
 
 /*/////// LAYOUT STYLES ////////*/
-
 .row {
    margin-bottom: 20px;
+}
+
+/*/////// CAROUSEL STYLES ////////*/
+
+ #carousel-example-generic .item img {
+  height: auto;
+ }
+
+ .carousel-caption p {
+    display: none;
+ }
+/*/////// SMALL DEVICES ////////*/
+@media  only screen and (min-width:768px ) {
+
+ #carousel-example-generic .item img {
+  height: 384px;
+ }
+}
+
+/*/////// MEDIUM DEVICES ////////*/
+@media  only screen and (min-width:992px ) {
+  .carousel-caption p {
+    display: block;
+ }
+
+ #carousel-example-generic .item img {
+  height: 496px;
+ }
+}
+/*/////// LARGE DEVICES ////////*/
+@media  only screen and (min-width:1200px ) {
+
+ #carousel-example-generic .item img {
+  height: 600px;
+ }
 }
